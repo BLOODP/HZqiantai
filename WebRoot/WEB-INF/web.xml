@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>	
+  
+  <listener>
+  	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>GetUserServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.GetUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.AdminLoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddUserServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.AddUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.UpdatePasswordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RemoveUserServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.RemoveUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UploadImageServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.UploadImageServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.TestServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PublishNewsServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.PublishNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetAllNewsServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.GetAllNewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetNewsByType</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.GetNewsByType</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetAllImagesServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.GetAllImagesServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetImageByType</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.GetImageByTypeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetAllNewsIdAndTitle</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.GetAllNewsIdAndTitleServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetNewsByIdServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.GetNewsByIdServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetImageByIdServlet</servlet-name>
+    <servlet-class>com.qiantai_business.servlet.GetImageByIdServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>GetUserServlet</servlet-name>
+    <url-pattern>/servlet/GetUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/servlet/AdminLoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddUserServlet</servlet-name>
+    <url-pattern>/servlet/AddUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePasswordServlet</servlet-name>
+    <url-pattern>/servlet/UpdatePasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RemoveUserServlet</servlet-name>
+    <url-pattern>/servlet/RemoveUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UploadImageServlet</servlet-name>
+    <url-pattern>/servlet/UploadImageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/servlet/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PublishNewsServlet</servlet-name>
+    <url-pattern>/servlet/PublishNewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAllNewsServlet</servlet-name>
+    <url-pattern>/servlet/GetAllNewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetNewsByType</servlet-name>
+    <url-pattern>/servlet/GetNewsByTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAllImagesServlet</servlet-name>
+    <url-pattern>/servlet/GetAllImagesServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetImageByType</servlet-name>
+    <url-pattern>/servlet/GetImageByTypeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetAllNewsIdAndTitle</servlet-name>
+    <url-pattern>/servlet/GetAllNewsIdAndTitleServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetNewsByIdServlet</servlet-name>
+    <url-pattern>/servlet/GetNewsByIdServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetImageByIdServlet</servlet-name>
+    <url-pattern>/servlet/GetImageByIdServlet</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  	<param-name>contextConfigLocation</param-name>
+  	<param-value>/WEB-INF/applicationContext.xml</param-value>
+  </context-param>
+  
+  <filter>
+  	<filter-name>characterEncodingFilter</filter-name>
+  	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>forceEncoding</param-name>
+  		<param-value>false</param-value>
+  	</init-param>
+  </filter>
+  
+  <filter-mapping>
+  	<filter-name>characterEncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>

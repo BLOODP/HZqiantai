@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/management.css" rel="stylesheet">
+		<link href="../css/font-awesome.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="main-box">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="navbar-header bg-info">
+					<a class="navbar-brand ">乾泰后台管理界面</a>
+				</div>
+				<ul class="navbar-nav nav ">
+					<a href="#">
+						<i class="fa fa-indent indent"></i>
+					</a>
+				</ul>
+				<ul class="navbar-nav navbar-right nav">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"">信息提示</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">管理员</a>
+					</li>
+				</ul>
+			</nav>
+			
+			<div class="content-box">
+				<div class="aside">
+					<nav class="navbar">
+						<ul class="nav navlist">
+							<li><a class="text-sm">查看</a></li>
+							<li><a href="#" class="hover-color"><i class="fa fa-music"></i><span>查看所有用户</span></a></li>
+							<li><a href="#" class="hover-color"><i class="fa fa-fire"></i><span>查看所有管理员</span></a></li>
+							<li><a class="text-sm">管理</a></li>
+							<li><a href="#" class="hover-color"><i class="fa fa-beer"></i><span>添加管理员</span></a></li>
+							<li><a href="#" class="hover-color"><i class="fa fa-search"></i><span>删除管理员</span></a></li>
+							<li><a class="text-sm">新闻</a></li>
+							<li><a href="#" class="hover-color"><i class="fa fa-share"></i><span>新闻列表</span></a></li>
+							<li><a href="#" class="hover-color"><i class="fa fa-share"></i><span>新闻发布</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="content">
+					<ol class="breadcrumb">
+						<li><a href="#">主页</a></li>
+						<li><a href="#">新闻列表</a></li>
+					</ol>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							新闻列表 
+								<button class="btn btn-info pull-right" style="  position: relative; bottom: 5px;">下载模板</button>	
+						</div>
+						<div class="row wrapper">
+		                    <div class="col-sm-5  btn-group">
+		                        <select class=" form-control input-s-sm  btn btn-group select-border">
+		                            <option value="0">所有新闻</option>
+		                           
+		                        </select>
+		                        <button class="btn  btn-default">确定</button>
+		                    </div>
+		                    <div class="col-sm-4 m-b-xs">
+		                        <div class="btn-group" data-toggle="buttons">
+		                            <label class="btn btn-sm btn-default active">
+		                                <input type="radio" name="options"> Day
+		                            </label>
+		                            <label class="btn btn-sm btn-default">
+		                                <input type="radio" name="options"> Week
+		                            </label>
+		                            <label class="btn btn-sm btn-default">
+		                                <input type="radio" name="options"> Month
+		                            </label>
+		                        </div>
+		                    </div>
+		                    <div class="col-sm-3">
+		                        <div class="input-group">
+		                            <input type="text" class="input-sm form-control" placeholder="搜索内容..">
+		                            <span class="input-group-btn">
+		                        <button class="btn btn-sm btn-default" type="button">搜索!</button>
+		                      </span>
+		                        </div>
+		                    </div>
+                      </div>
+                      
+                      <table class="table table-striped">
+                      	<thead>
+                      		<tr><th width="20px"><input type="checkbox"></th><th>名称</th><th>管理员</th><th>时间</th></tr>
+                      	</thead>
+                      	<tbody>
+                      		<tr><td width="20px"><input type="checkbox"></td><td>重庆邮电大学新闻</td><td>admin</td><td>2015.6.7</td></tr>
+                      		<tr><td width="20px"><input type="checkbox"></td><td>重庆邮电大学新闻</td><td>admin</td><td>2015.6.7</td></tr>
+                      		<tr><td width="20px"><input type="checkbox"></td><td>重庆邮电大学新闻</td><td>admin</td><td>2015.6.7</td></tr>
+                      		<tr><td width="20px"><input type="checkbox"></td><td>重庆邮电大学新闻</td><td>admin</td><td>2015.6.7</td></tr>
+                      		<tr><td width="20px"><input type="checkbox"></td><td>重庆邮电大学新闻</td><td>admin</td><td>2015.6.7</td></tr>
+                      		<tr><td width="20px"><input type="checkbox"></td><td>重庆邮电大学新闻</td><td>admin</td><td>2015.6.7</td></tr>
+                      		<tr><td width="20px"><input type="checkbox"></td><td>重庆邮电大学新闻</td><td>admin</td><td>2015.6.7</td></tr>
+                      		<tr><td width="20px"><input type="checkbox"></td><td>重庆邮电大学新闻</td><td>admin</td><td>2015.6.7</td></tr>
+                      		
+                      	</tbody>
+                      </table>
+                      
+                      <div class="panel-footer">
+                      	<div class="row">
+                      		<div class="col-sm-4">
+                      			<div class="btn-group">
+                      				 <select class=" form-control input-s-sm  btn btn-group select-border">
+			                            <option value="0">删除选中</option>
+			                            <option value="1">删除全部</option>
+			                            <option value="2">编辑所选</option>
+			                            <option value="3">编辑选取</option>
+		                        	</select>
+		                        <button class="btn  btn-default">确定</button>
+                      			</div>
+                      		</div>
+                      		<div class="col-sm-4 pagecount" style="text-align: center;">
+                      			<small>每页8条内容</small>
+                      		</div>
+                      		<div class="col-sm-4">
+                      			<nav>
+								  <ul class="pagination">
+								    <li>
+								      <a href="#" aria-label="Previous">
+								        <span aria-hidden="true">&laquo;</span>
+								      </a>
+								    </li>
+								    <li><a href="#">1</a></li>
+								    <li><a href="#">2</a></li>
+								    <li><a href="#">3</a></li>
+								    <li><a href="#">4</a></li>
+								    <li><a href="#">5</a></li>
+								    <li>
+								      <a href="#" aria-label="Next">
+								        <span aria-hidden="true">&raquo;</span>
+								      </a>
+								    </li>
+								  </ul>
+								</nav>
+                      		</div>
+                      	</div>
+                      </div>
+                     </div>
+				 </div>
+				<div>
+			</div>
+		</div>
+		<script src="js/jquery.min.js"></script>
+	</body>
+</html>

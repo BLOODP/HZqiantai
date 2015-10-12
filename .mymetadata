@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="HZqiantai"
+  id="myeclipse.1443179632183"
+  context-root="/qiantai"
+  j2ee-spec="5.0"
+  archive="HZqiantai.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

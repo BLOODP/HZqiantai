@@ -1,0 +1,60 @@
+.head .logo{
+	display: block;
+	margin: 0 auto;
+}
+html,body{
+	font-family:Microsoft Yahei;
+}
+.location{
+	margin-top:20px;
+	border-bottom:2px solid #F0F0F0;
+	background-color:white;
+	padding-left:0;
+}
+.my-location{
+	background:url(../img/daohang2.png) no-repeat left;
+	padding-left:20px;
+}
+
+.location a{
+    font-family:Microsoft Yahei;
+}
+
+h1{
+	font-size:25px;
+}
+/*侧边栏*/
+.aside{
+	width:200px;
+    border:2px solid #eee;
+    margin-bottom:20px;
+    float:left;
+}
+.nav-stacked li a{text-align:center;}
+
+
+
+.aside li.active{background-color:#eee;} 
+
+/*右边内容*/
+.content{
+	width:750px;
+	border:2px solid #eee;
+	padding:0 15px;
+	float:right;
+	margin-bottom:50px;
+}
+.content h1{
+	color:#337ab7;
+	margin-bottom:30px;
+}
+/*页脚*/
+.footer {
+    border-top: 1px solid #e5e5e5;
+    color: #777;
+    padding: 30px 0;
+    background-color:#eee;
+}
+.footer p {
+    text-align: center;
+}

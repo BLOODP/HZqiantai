@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.qiantai_business.dao.CompanyDao">
+	
+	<insert id="insertCompanyInfo" parameterType="com.qiantai_business.po.CompanyPo">
+		INSERT INTO 
+		qiantai_companyinfo 
+		(company_name,company_address,company_intro,company_history,company_org,company_cluture,company_tel,company_contactperson,company_faxnum,company_email) 
+		VALUES(#{company_name},#{company_address},#{company_intro},#{company_history},#{company_org},#{company_cluture},#{company_tel},#{company_contactperson},#{company_faxnum},#{company_email})
+	</insert>
+	
+	<select id="getCompanyInfo" resultType="com.qiantai_business.po.CompanyPo">
+		SELECT * FROM qiantai_companyinfo
+	</select>
+	
+	<update id="updateCompanyIntro" parameterType="String">
+		UPDATE qiantai_companyinfo SET company_intro =#{company_intro}
+	</update>
+	
+	<update id="updateCompanyCulture" parameterType="String">
+		UPDATE qiantai_companyinfo SET company_cluture =#{company_cluture}
+	</update>
+	
+	<update id="updateCompanyHistory" parameterType="String">
+		UPDATE qiantai_companyinfo SET company_history =#{company_history}
+	</update>
+	
+	<update id="updateCompanyFaxnum" parameterType="String">
+		UPDATE qiantai_companyinfo SET company_faxnum =#{company_faxnum}
+	</update>
+
+</mapper>

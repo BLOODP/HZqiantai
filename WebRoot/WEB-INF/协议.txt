@@ -1,0 +1,95 @@
+qiantai/html/index.html：
+
+	公司新闻列表：
+		request:(加载页面时)
+		/servlet/GetAllNewsIdAndTitleServlet
+		类型：Ajax(Post Method)
+		{
+			"news_id":x,
+			"news_type":"xxx"(公司新闻:companyNews,行业新闻:industryNews,人才招聘:recruitmentNews)
+		}
+		
+		response:(加载页面时)
+		
+		{
+			[{"news_title":"xxx",
+			 "news_type":"xxx",
+			 "news_id":x,
+			 "news_submitdate":"xxx-xx-xx xx:xx:xx"
+			 },{}
+			]
+		}
+		
+		request:(点击新闻时)
+		/servlet/GetNewsByIdServlet
+		{
+			"news_id":x
+		}
+		
+		response:(点击新闻时)
+		{
+			{
+				"news_id":x,
+				"news_title":"xxx",
+				"news_content":"xxxxx",
+				"news_type":"xxx",
+				"news_submitdate":"xxx-xx-xx xx:xx:xx"
+				"news_publisher":"xxx"
+			}
+		}
+		
+
+qiantai/html/product-center1|2|3|4|5|6.html,qiantai/html/case-project.html:
+	
+	request:(加载页面时)
+	/servlet/GetImageByTypeServlet
+	类型：Ajax(Post Method)
+	{
+		"image_type":"xxx" //图片分类(LOW-E玻璃:LOW-E,案列工程:case-project,钢化玻璃:tempering,
+									工艺玻璃:crafts,公司介绍:introduction,公司荣誉:honor,
+									夹胶玻璃:laminate,建筑玻璃:building,中空玻璃:hollow,
+									组织架构:organization)
+		"pageNum":x //当前页面号码，加载时默认为1
+	}
+	
+	response:(加载页面时)
+	{
+		[{"pageCount":x }//当前分类下分页的数量
+		{"image_id":x,
+		  "image_name":"xxx",
+		  "image_type":"xxx",
+		  "image_description":"xxx",
+		  "image_path":"xxx",
+		  "image_submitdate":"xxx",
+		  },{}
+		]
+	}
+
+	request:(点击页码时)
+	/servlet/GetImageByTypeServlet
+	类型：Ajax(Post Method)
+	{
+		"image_type":"xxx" //图片分类
+		"pageNum":x //当前页面页码，加载时默认为1
+	}
+	
+	response:(点击页码时)
+	{
+		[{"pageCount":x }//当前分类下分页的数量
+		{"image_id":x,
+		  "image_name":"xxx",
+		  "image_type":"xxx",
+		  "image_description":"xxx",
+		  "image_path":"xxx",
+		  "image_submitdate":"xxx",
+		  },{}
+		]
+	}
+		
+		
+		
+		
+		
+		
+		
+		

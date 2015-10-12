@@ -1,0 +1,19 @@
+ul{
+	list-style:none;
+	padding:0;
+}
+.content ul.clearfix li{
+	float:left;
+	border:3px solid #E0E0E0;
+	text-align:center;
+	background-color:#eee;
+}
+.content ul li img{
+	width:174px;
+	height:160px;
+	display:block;
+}
+
+.list-center{
+	margin:0 88px;
+}

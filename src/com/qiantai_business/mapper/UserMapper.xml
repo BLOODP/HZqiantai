@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.qiantai_business.dao.UserDao">
+	
+	<insert id="addUser" parameterType="com.qiantai_business.po.UserPo">
+		INSERT INTO qiantai_user (user_name,password,user_class) VALUES(#{user_name},#{password},#{user_class})
+	</insert>
+	
+	<select id="getUserPo" resultType="com.qiantai_business.po.UserPo">
+		SELECT * FROM qiantai_user
+	</select>
+	
+	<select id="getUserByNameAndPassword" parameterType="Map">
+		SELECT * FROM qiantai_user WHERE user_name = #{user_name} AND password = #{password}
+	</select>
+	
+	<select id="findUserByName" parameterType="String">
+		SELECT * FROM qiantai_user WHERE user_name = #{user_name}
+	</select>
+	
+	<update id="updatePassword" parameterType="Map">
+		UPDATE qiantai_user SET password =#{password} WHERE user_name = #{user_name}
+	</update>
+	
+	<delete id="removeUser" parameterType="String">
+		DELETE FROM qiantai_user WHERE user_name = #{user_name}
+	</delete>
+	
+</mapper>

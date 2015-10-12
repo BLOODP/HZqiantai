@@ -1,0 +1,15 @@
+.pull-right {
+  color: #fd9207;
+  float: right;
+}
+.total-page{
+	  margin-top: 7px;
+  margin-left: 7px;
+  display: inline-block;
+  color: black;
+}
+.list-text{
+	  display: inline-block;
+  width: 80%;
+  overflow: hidden;
+}
